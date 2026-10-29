@@ -1,0 +1,7 @@
+sku,product_name,description,list_price,promo_price,availability
+AP500-PRO,AquaPearl 500 Pro,Smart water purifier,899.00,849.00,available
+AP300,AquaPearl 300,Water purifier,599.00,579.00,available
+AERO-MINI,AeroPearl Mini,Compact air purifier,249.00,229.00,available
+FILTER-SED-500,Sediment pre-filter for AquaPearl 500 Pro,Replacement sediment filter,29.00,25.00,available
+FILTER-CARB-500,Carbon filter for AquaPearl 500 Pro,Replacement carbon filter,39.00,35.00,available
+OLD-AP200,AquaPearl 200,Discontinued purifier,Legacy model,Legacy model,discontinued

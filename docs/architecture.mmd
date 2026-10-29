@@ -1,0 +1,16 @@
+flowchart TD
+    A[Customer question + chat history] --> B[Query condensation]
+    B --> C[Embedding model]
+    D[Knowledge base: MD / CSV / PDF / DOCX] --> E[Loader + metadata]
+    E --> F[Recursive text splitter]
+    F --> G[Embedding model]
+    G --> H[(Persistent Chroma vector store)]
+    C --> I[Retriever: similarity / MMR]
+    H --> I
+    I --> J{Relevance gate}
+    J -- no supporting chunks --> K[Grounded refusal]
+    J -- relevant chunks --> L[Context formatting + source labels]
+    L --> M[Grounded system prompt + LLM]
+    M --> N[Pydantic response validation]
+    N --> O[Answer + validated citations + logs]
+    K --> O
